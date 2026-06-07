@@ -19,7 +19,7 @@ class AppController extends Controller
         $title = __("pages.index.name");
 
         // Return the 'pages.index' view with the title
-        return view('pages.Index', compact('title'));
+        return view('pages.index', compact('title'));
     }
 
     /**
