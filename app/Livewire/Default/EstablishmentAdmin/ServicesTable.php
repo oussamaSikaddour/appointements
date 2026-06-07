@@ -144,7 +144,7 @@ protected function buildServiceQuery()
     public function updated(string $property): void
     {
         if ($property === 'excelFile') {
-            $errors = $this->whenExcelFileUploaded('servicesImport', __('tables.services.excel.upload.success') , [$this->establishmentId]);
+            $errors = $this->whenExcelFileUploaded('ServicesImport', __('tables.services.excel.upload.success') , [$this->establishmentId]);
             if (is_array($errors)) {
                 $this->dispatch('errors-file-data', errorsFileData: $errors);
             }
